@@ -11,11 +11,6 @@ public class person {
         return ID;
     }
 
-    /***
-     * Method: doSomethingElse
-     * Description: Xuất ra màn hình message
-     * @param messagse
-     */
     public void doSomethingElse(String messagse) {
         System.out.println("Doing something else..."+ messagse);
     }
