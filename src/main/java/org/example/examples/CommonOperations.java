@@ -41,11 +41,11 @@ public class CommonOperations {
 //                    public void visit(ClassOrInterfaceDeclaration n, Object arg) {
 //                        super.visit(n, arg);
 //                        String className = n.getNameAsString();
-
+//
 //                        if (!isValidClassName(className)) {
 //                            System.out.println("WARNING: Invalid class name - " + className);
 //                        }
-
+//
 //                        if (isCommented(n)) {
 //                            System.out.println("Class: " + className + " has comment");
 //                        } else {
@@ -53,30 +53,30 @@ public class CommonOperations {
 //                        }
 //                    }
 
-                    //                    @Override
-//                    public void visit(FieldDeclaration n, Object arg) {
-//                        super.visit(n, arg);
-//                        // cau4
-////                        List<VariableDeclarator> variables = n.getVariables();
-////                        for (VariableDeclarator variableDeclarator : variables) {
-////                            String fieldName = variableDeclarator.getNameAsString();
-////
-////                            if (!isValidFieldName(fieldName)) {
-////                                System.out.println("WARNING: Invalid field name - " + fieldName);
-////                            }
-////                        }
+                                        @Override
+                    public void visit(FieldDeclaration n, Object arg) {
+                        super.visit(n, arg);
+                        // cau4
+//                        List<VariableDeclarator> variables = n.getVariables();
+//                        for (VariableDeclarator variableDeclarator : variables) {
+//                            String fieldName = variableDeclarator.getNameAsString();
 //
-//                        // cau5
-//                        // Kiểm tra xem trường có phải là hằng số không
-////                        if (n.isFinal() && n.isStatic()) {
-////                            // Kiểm tra xem trường có phải là hằng số viết hoa trong một interface không
-////                            if (isValidConstantField(n)) {
-////                                System.out.println("Constant field is valid: " + n.getVariables().get(0).getNameAsString());
-////                            } else {
-////                                System.out.println("WARNING: Invalid constant field: " + n.getVariables().get(0).getNameAsString());
-////                            }
-////                        }
-//                    }
+//                            if (!isValidFieldName(fieldName)) {
+//                                System.out.println("WARNING: Invalid field name - " + fieldName);
+//                            }
+//                        }
+
+                        // cau5
+                        // Kiểm tra xem trường có phải là hằng số không
+//                        if (n.isFinal() && n.isStatic()) {
+//                            // Kiểm tra xem trường có phải là hằng số viết hoa trong một interface không
+//                            if (isValidConstantField(n)) {
+//                                System.out.println("Constant field is valid: " + n.getVariables().get(0).getNameAsString());
+//                            } else {
+//                                System.out.println("WARNING: Invalid constant field: " + n.getVariables().get(0).getNameAsString());
+//                            }
+//                        }
+                    }
 //
                     @Override
                     public void visit(MethodDeclaration n, Object arg) {
